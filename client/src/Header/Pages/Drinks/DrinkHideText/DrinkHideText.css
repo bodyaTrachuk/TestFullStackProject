@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../../../../img/Comfortaa-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa";
+}
+
+.DrinkHideText {
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.dht-content {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.dht-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0;
+  letter-spacing: 0.3mm;
+}
+
+.dht-title2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dht-after-title {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dht-after-title p {
+  letter-spacing: 0.2mm;
+  line-height: 0.5cm;
+}
+
+.hide-content {
+  max-height: 350px;
+  overflow: hidden;
+  transition: 2s ease;
+}
+
+
+.hide-content.show {
+  max-height: 9999px;
+  transition: 5s ease-in-out;
+}
+
+.toggle {
+  color: #c80000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.toggle:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.img-absolute img {
+  position: absolute;
+  width: 20%;
+  height: 300px;
+  transform: translateY(-250px);
+  z-index: -1;
+}
+
+.img-absolute img:first-child {
+  left: 0;
+}
+.img-absolute img:last-child {
+  right: 0;
+}

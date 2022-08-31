@@ -1,0 +1,49 @@
+.basket-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-container a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-container svg {
+  width: 40px;
+  height: 40px;
+}
+
+.shop-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+
+@media (max-width: 1200px) {
+  .basket-container a {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .basket-container a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basket-container svg {
+    width: 25px;
+    height: auto;
+  }
+}

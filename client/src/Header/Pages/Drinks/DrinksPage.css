@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../../../img/Comfortaa-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa";
+}
+
+.Drink-cotainer {
+  width: 100%;
+}
+
+.DrinkTitle {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.Drink-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Drink-card-content {
+  /* width: 90%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Drink-card-content > .react-reveal,
+.card-drink {
+  /* width: 32%; */
+  flex: 1 1 32%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  border: 20px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+
+/* .card-drink {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 20px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s all;
+} */
+
+.card-drink:hover {
+  box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-drink hr {
+  border: 0.1px solid rgb(221, 221, 221);
+  outline: none;
+}
+
+.drink-img {
+  width: 100%;
+}
+
+.drink-img img {
+  width: 100%;
+}
+
+.adaptive-dinkCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+.card-text-drink {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  letter-spacing: 0.2mm;
+}
+
+.card-text-drink p {
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+
+.card-text-drink p:hover {
+  color: #ffd400;
+}
+
+.bottom-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.drink-pice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.drink-pice p:first-child {
+  font-size: 24px;
+  color: #c80000;
+  font-weight: bold;
+}
+.drink-pice p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.drink-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.drink-inputs span {
+  font-size: 24px;
+  color: #c80000;
+  transition: 0.5s all;
+}
+
+.drink-inputs span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.drink-inputs input {
+  width: 45px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+}
+
+.drink-btn button {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #ffd400;
+  border: 1px solid #ffd400;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2mm;
+  transition: 0.5s all;
+  padding: 0 10px;
+}
+
+.drink-btn button:hover {
+  cursor: pointer;
+  background-color: #c80000;
+  color: white;
+}
+
+@media (max-width: 1130px) {
+  .Drink-card-content > .react-reveal {
+    width: 45%;
+  }
+
+  .card-text-drink p {
+    font-size: 22px;
+  }
+
+  .Drink-card-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .Drink-card-content {
+    gap: 5px;
+  }
+
+  .Drink-card-content > .react-reveal {
+    width: 90%;
+    border: 0.1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+  }
+
+  .card-drink {
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
+
+  .card-drink:hover {
+    box-shadow: none;
+  }
+
+  .adaptive-dinkCard {
+    display: flex;
+    gap: 45px;
+    padding: 25px 0;
+  }
+
+  .drink-img {
+    width: 100%;
+  }
+
+  .card-text-drink p {
+    text-align: start;
+  }
+
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  .card-drink hr {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .card-text-drink p {
+    font-size: 16px;
+  }
+
+  .adaptive-dinkCard {
+    padding: 5px 0;
+    gap: 25px;
+  }
+
+  .drink-pice p:first-child {
+    font-size: 18px;
+  }
+  .drink-pice p:last-child {
+    font-size: 14px;
+  }
+
+  .drink-inputs input {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .drink-btn button {
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .DrinkTitle {
+    font-size: 45px;
+    padding: 35px 0;
+  }
+}

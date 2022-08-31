@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.TextHide-sector {
+  width: 100%;
+}
+
+.TextHide-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.TextHide-title1,
+.TextHide-title2,
+.TextHide-title3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.TextHide-title1 p,
+.TextHide-title2 p,
+.TextHide-title3 p {
+  font-size: 16px;
+  letter-spacing: 0.13mm;
+  line-height: 0.5cm;
+}
+
+.TextHide-title1 p:first-child {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.TextHide-title2 p:first-child,
+.TextHide-title3 p:first-child {
+  font-size: 20px;
+  text-align: start;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1mm;
+}
+
+.toggle-button p {
+  color: #c80000;
+  font-size: 16px;
+  transition: 0.2s all;
+  display: inline-block;
+}
+
+.toggle-button p:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.TextHide-items {
+  position: relative;
+  padding: 10px 0;
+  max-height: 270px;
+  overflow: hidden;
+  transition: 2s ease;
+}
+
+.TextHide-items.show {
+  max-height: 9999px;
+  transition: 5s ease-in-out;
+}
+
+.images img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+.images img:first-child {
+  left: 0;
+  transform: translateY(-280px);
+}
+.images img:last-child {
+  right: 0;
+  transform: translateY(-280px);
+}
+
+@media (max-width: 940px) {
+  .TextHide-title1 p:first-child {
+    font-size: 24px;
+  }
+  .images img {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+  }
+
+  .TextHide-items {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .TextHide-title1 p:first-child {
+    font-size: 20px;
+  }
+}

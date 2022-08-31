@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.action-content {
+  width: 100%;
+}
+
+.action-section {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.action-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.action-card {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.action-card img {
+  width: 600px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.action-card > .react-reveal,
+.card-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-action button {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ffd600;
+  outline: none;
+  background-color: #ffd600;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2mm;
+  transition: 0.5s all;
+}
+
+.card-action button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .action-card img {
+    width: 100%;
+    height: 100%;
+  }
+}

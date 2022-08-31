@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../../../img/Comfortaa-Regular.ttf');
+}
+
+.login-container {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    display: flex;
+    align-items: center;
+}
+
+.login-container  a {
+    text-decoration: none;
+    color:black;
+}
+
+.login-container  a:hover {
+    color: rgb(255, 234, 0);
+    transition: .5s all;
+    cursor: pointer;
+}

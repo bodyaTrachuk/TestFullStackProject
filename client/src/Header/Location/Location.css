@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../../img/Comfortaa-Regular.ttf');
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-container  span:hover {
+    color: rgb(255, 234, 0);
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.location-container > svg {
+    width: 20px;
+    height: 26px;
+}
+
+.location-container span {
+    font-family: 'Comfortaa';
+    font-size: 14px;
+}
+
+
+@media (max-width:1200px){
+    .location-container span {
+        display: none;
+    }
+}

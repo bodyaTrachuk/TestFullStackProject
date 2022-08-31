@@ -1,0 +1,83 @@
+.hide-contaner {
+  width: 100%;
+  position: relative;
+}
+
+.hideText {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.hideText .contentText p {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  line-height: 2;
+}
+
+.contentText {
+  max-height: 240px;
+  overflow: hidden;
+  transition: 2s ease;
+}
+
+.contentText.open {
+  max-height: 9999px;
+  transition: 5s ease-in-out;
+}
+
+.header-title1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.header-title2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.readMore {
+  color: #c80000;
+  font-weight: bold;
+}
+
+.readMore:hover {
+  cursor: pointer;
+}
+
+.img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.img-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.img-left img {
+  width: 300px;
+  height: 400px;
+}
+.img-right img {
+  width: 300px;
+  height: 400px;
+}
+
+
+@media (max-width:650px) {
+  .contentText {
+    max-height: 250px;
+  }
+}

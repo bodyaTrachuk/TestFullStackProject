@@ -1,0 +1,26 @@
+export const data = [
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/4.jpg',
+       buttonTitile:'Детальніше',
+    },
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/pryvedy-druga.jpg',
+       buttonTitile:'Детальніше',
+    },
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/7.jpg',
+       buttonTitile:'Детальніше',
+    },
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/5.jpg',
+       buttonTitile:'Детальніше',
+    },
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/3.jpg',
+       buttonTitile:'Детальніше',
+    },
+    {
+       url:'https://la.ua/wp-content/uploads/2021/08/2.jpg',
+       buttonTitile:'Детальніше',
+    },
+]

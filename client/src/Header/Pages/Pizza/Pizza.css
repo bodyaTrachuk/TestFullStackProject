@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../../../img/Comfortaa-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa";
+}
+
+.pizza-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* margin-bottom: 20px; */
+}
+
+.pizza-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.cards-block {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cards-container > .react-reveal,
+.cards {
+  position: relative;
+  margin-bottom: 30px;
+  flex: 1 1 32%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s all;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* .cards {
+  position: relative;
+  margin-bottom: 30px;
+  flex: 1 1 32%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s all;
+  padding: 20px;
+  border-radius: 10px;
+} */
+
+.adaptive-block {
+  gap: 10px;
+  width: 100%;
+}
+
+.cards:hover {
+  box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cards:hover > .realive .imageHover {
+  opacity: 1;
+}
+
+.realive {
+  position: relative;
+}
+
+.imageHover {
+  transition: 0.75s all;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.realive > a {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.realive img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+
+.title:hover {
+  color: #ffd600;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+  color: gray;
+}
+
+.price {
+  color: #c80000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titlePrice {
+  font-weight: bold;
+}
+
+.card-price {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.block-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.block-input > input {
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  outline: 1.5px solid gray;
+}
+
+.card-price > button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd600;
+  width: 120px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.5s all;
+}
+
+.minus {
+  color: #c80000;
+  font-size: 25px;
+  transition: 0.5s all;
+}
+
+.plus {
+  color: #c80000;
+  font-size: 25px;
+  transition: 0.5s all;
+}
+
+.card-price-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.absolute-block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 20px;
+  left: 20px;
+}
+
+.content-before {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.content-after {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.weight {
+  color: #c80000;
+  font-weight: 600;
+}
+
+.weightTitle {
+  font-weight: 600;
+}
+
+.size {
+  font-weight: 600;
+}
+
+.sizeTitle {
+  font-weight: 600;
+}
+
+.cards-block hr {
+  width: 100%;
+  border: 0.3px solid rgb(233, 233, 233);
+}
+
+.card-price > button:hover {
+  cursor: pointer;
+  background-color: #c80000;
+  color: white;
+}
+
+.minus:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.plus:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.pizza-content .react-reveal {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.adaptiveBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  .pizza-content {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1034px) {
+  .cards-container > .react-reveal,
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+  .pizza-content {
+    padding: 0 50px;
+  }
+
+  .realive img {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .adaptiveBlock {
+    width: 100%;
+    height: 300px;
+  }
+
+  .card-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s all;
+  }
+
+  .description {
+    text-align: start;
+  }
+}
+
+@media (max-width: 767px) {
+  .pizza-content {
+    padding: 0 5px;
+  }
+
+  .realive img {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cards-container > .react-reveal,
+  .cards {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .cards {
+    border: 0.1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .card-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .realive img {
+    margin: 0 auto;
+    width: 200px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .adaptiveBlock {
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 10px;
+    text-align: start;
+  }
+
+  .weight,
+  .size {
+    font-size: 12px;
+  }
+
+  .weightTitle,
+  .sizeTitle {
+    font-size: 12px;
+  }
+}

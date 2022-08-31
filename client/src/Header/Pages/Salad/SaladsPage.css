@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../../../img/Comfortaa-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa";
+}
+
+.salad-container {
+  width: 100%;
+}
+
+.salad-title {
+  margin: 70px auto;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s all;
+}
+
+.salad-card {
+  width: 100%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.salad-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.salad-content > .react-reveal,
+.cards-sald {
+  margin: 0 auto;
+  position: relative;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: 1s all;
+}
+
+.cards-sald:hover > .upperCase > .hover-image {
+  opacity: 1;
+}
+
+.upperCase {
+  position: relative;
+}
+
+.upperCase img {
+  width: 100%;
+  height: 100%;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 1s all;
+}
+
+.def-img img {
+  width: 100%;
+  z-index: 1;
+}
+
+.hover-image {
+  position: absolute;
+  left: 0;
+}
+
+.middlecase {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.middlecase p {
+  text-align: center;
+  letter-spacing: 0.1mm;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.middlecase p:first-child {
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.5s all;
+}
+
+.middlecase p:first-child:hover {
+  color: #ffd600;
+}
+
+.middlecase p:last-child {
+  font-size: 16px;
+  color: rgb(149, 149, 149);
+}
+
+.lowerCase {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.PriceTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.PriceTitle p:first-child {
+  color: #c80000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.PriceTitle p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputs input {
+  width: 45px;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.toglle {
+  font-size: 27px;
+  color: #c80000;
+  transition: 0.5s all;
+}
+
+.toglle:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.delButtom button {
+  background-color: #ffd600;
+  border: 1px solid #ffd600;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2mm;
+  transition: 0.5s all;
+}
+
+.delButtom button:hover {
+  cursor: pointer;
+  background-color: #c80000;
+  color: white;
+}
+
+.absoluteCase {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.absoluteCase p:first-child {
+  color: #c80000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.absoluteCase p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.adaptive-saladPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adaptive-saladPage hr {
+  width: 100%;
+  border: 0.3px solid rgb(233, 233, 233);
+}
+
+@media (max-width: 1100px) {
+  .salad-content > .react-reveal,
+  .cards-sald {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cards-sald {
+    width: 100%;
+  }
+
+  .middlecase p {
+    text-align: start;
+  }
+
+  .middlecase p:first-child {
+    font-size: 22px;
+  }
+
+  .adaptive-saladPage {
+    height: 340px;
+  }
+
+  .lowerCase {
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .middlecase p:first-child {
+    font-size: 16px;
+  }
+
+  .middlecase p:last-child {
+    font-size: 12px;
+  }
+
+  /* .upperCase img {
+    width: 200px;
+    height: auto;
+  } */
+}
+
+@media (max-width: 430px) {
+  .cards-sald {
+    border: 0.1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+  }
+
+  .upperCase img {
+    border-radius: 10px 0 0 0;
+  }
+
+  .middlecase p:first-child {
+    font-size: 12px;
+  }
+
+  .middlecase p:last-child {
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .delButtom button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .PriceTitle p:first-child {
+    font-size: 14px;
+  }
+
+  .PriceTitle p:last-child {
+    font-size: 12px;
+  }
+
+  .inputs input {
+    width: 35px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .adaptive-saladPage {
+    height: auto;
+  }
+
+  .absoluteCase {
+    top: 10px;
+    left: 10px;
+    gap: 5px;
+  }
+
+  .absoluteCase p:first-child {
+    font-size: 12px;
+  }
+
+  .absoluteCase p:last-child {
+    font-size: 12px;
+  }
+
+  .salad-title {
+    margin: 35px auto;
+  }
+}

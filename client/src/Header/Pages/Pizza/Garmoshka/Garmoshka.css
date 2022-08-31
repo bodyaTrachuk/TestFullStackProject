@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.garmoshka-container {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Garmoshka {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 50px;
+  transition: 2s ease-in-out;
+}
+
+.Garmoshka hr {
+  border: 0.1px solid rgb(231, 230, 230);
+}
+
+.GarmoshkaItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+.GarmoshkaTitle {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 0.2mm;
+}
+
+.GarmoshkaItem {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.Garmoshka.open {
+  max-height: 9999px;
+  transition: 5s ease-in-out;
+}
+
+.GarmoshkaItem p {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2mm;
+}
+
+.GarmoshkaItem svg {
+  width: 15px;
+  height: 15px;
+}
+
+.textInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.3s all;
+}
+
+.GarmoshkaItem:hover > .textInfo {
+  color: #c80000;
+}
+
+.hideText1 {
+  width: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 650px) {
+
+  .Garmoshka{
+    max-height: 65px;
+  }
+}

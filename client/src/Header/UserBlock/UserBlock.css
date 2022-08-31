@@ -1,0 +1,17 @@
+.userBlock-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 1200px) {
+    .userBlock-container {
+        gap: 20px;
+    }
+}
+@media (max-width: 650px) {
+    .userBlock-container {
+        gap: 8px;
+    }
+}
